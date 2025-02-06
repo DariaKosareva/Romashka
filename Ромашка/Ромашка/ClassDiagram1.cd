@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ромашка.Culture">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Ромашка.Culture.Question">
+        <TypeIdentifier>
+          <NewMemberFileName>Culture.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ECAAhhAAACAAABAAAACgAAAKAMw7AAAA0HAPAABgQAA=</HashCode>
+      <FileName>Culture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Chemistry">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Ромашка.Chemistry.Formule">
+        <TypeIdentifier>
+          <NewMemberFileName>Chemistry.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>MAQBMhCMgCAAgRgAAAChQAwKAcA5IAAA6HkuAABCIAA=</HashCode>
+      <FileName>Chemistry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Chinese">
+    <Position X="4.75" Y="2.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Ромашка.Chinese.Symbols">
+        <TypeIdentifier>
+          <NewMemberFileName>Chinese.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>cCAAIhIBASAAABAAAACgQABKIEA4AgAAMHAIAABABQA=</HashCode>
+      <FileName>Chinese.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Guitar">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Ромашка.Guitar.Melody">
+        <TypeIdentifier>
+          <NewMemberFileName>Guitar.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAIhAAACABARgAAACgQAAKAdC4AAAAQHAsAABBIAA=</HashCode>
+      <FileName>Guitar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Liter">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Ромашка.Liter.Book">
+        <TypeIdentifier>
+          <NewMemberFileName>Liter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>8AABABAAACAgADAQAACgAAAKAAA4AAAAAHAAAABAAAA=</HashCode>
+      <FileName>Liter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

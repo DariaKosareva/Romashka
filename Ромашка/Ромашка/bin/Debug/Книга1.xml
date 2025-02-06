@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+   <Rowswc>
+	<chinese num = "1">
+    		<Chiierog>及乌屋爱</Chiierog>
+    		<Chitrans>Любишь дом, люби и ворон</Chitrans>
+    		<Ie1>爱</Ie1>
+    		<Ie1Trans>Нравиться</Ie1Trans>
+		<Ie2>屋</Ie2>
+    		<Ie2Trans>Дом</Ie2Trans>
+		<Ie3>及</Ie3>
+    		<Ie3Trans>И</Ie3Trans>
+		<Ie4>乌</Ie4>
+    		<Ie4Trans>Ворона</Ie4Trans>
+	</chinese>
+	<chinese num = "2">
+    		<Chiierog>非焉福知</Chiierog>
+    		<Chitrans>Откуда мне знать, что это не благословение?</Chitrans>
+    		<Ie1>焉</Ie1>
+    		<Ie1Trans>Отчего</Ie1Trans>
+		<Ie2>知</Ie2>
+    		<Ie2Trans>Знать</Ie2Trans>
+		<Ie3>非</Ie3>
+    		<Ie3Trans>Нет</Ie3Trans>
+		<Ie4>福</Ie4>
+    		<Ie4Trans>Благословение</Ie4Trans>
+	</chinese>
+	<chinese num = "3">
+    		<Chiierog>将求一难</Chiierog>
+    		<Chitrans>Генерала трудно найти</Chitrans>
+    		<Ie1>一</Ie1>
+    		<Ie1Trans>Первый</Ie1Trans>
+		<Ie2>将</Ie2>
+    		<Ie2Trans>Будет</Ie2Trans>
+		<Ie3>难</Ie3>
+    		<Ie3Trans>Сложный</Ie3Trans>
+		<Ie4>求</Ie4>
+    		<Ie4Trans>Искать</Ie4Trans>
+	</chinese>
+	<chinese num = "4">
+    		<Chiierog>着处小手</Chiierog>
+    		<Chitrans>Начните с малого</Chitrans>
+    		<Ie1>小</Ie1>
+    		<Ie1Trans>Небольшой</Ie1Trans>
+		<Ie2>处</Ie2>
+    		<Ie2Trans>Заниматься</Ie2Trans>
+		<Ie3>着</Ie3>
+    		<Ie3Trans>Носить (в сочетании с 手 - начать)</Ie3Trans>
+		<Ie4>手</Ie4>
+    		<Ie4Trans>Рука (в сочетании с 着 - начать)</Ie4Trans>
+	</chinese>
+	<chinese num = "5">
+    		<Chiierog>则溢水满</Chiierog>
+    		<Chitrans>Если воды полно, она переливается через край</Chitrans>
+    		<Ie1>水</Ie1>
+    		<Ie1Trans>Вода</Ie1Trans>
+		<Ie2>满</Ie2>
+    		<Ie2Trans>Наполнять</Ie2Trans>
+		<Ie3>则</Ie3>
+    		<Ie3Trans>То</Ie3Trans>
+		<Ie4>溢</Ie4>
+    		<Ie4Trans>Разливаться</Ie4Trans>
+	</chinese>
+	<chinese num = "6">
+    		<Chiierog>所有爱各</Chiierog>
+    		<Chitrans>У каждого есть своя собственная любовь</Chitrans>
+    		<Ie1>各</Ie1>
+    		<Ie1Trans>Все</Ie1Trans>
+		<Ie2>有</Ie2>
+    		<Ie2Trans>所</Ie2Trans>
+		<Ie3>及</Ie3>
+    		<Ie3Trans>Что</Ie3Trans>
+		<Ie4>爱</Ie4>
+    		<Ie4Trans>Любить</Ie4Trans>
+	</chinese>
+	<chinese num = "7">
+    		<Chiierog>见钟一情</Chiierog>
+    		<Chitrans>Любовь с первого взгляда</Chitrans>
+    		<Ie1>一</Ie1>
+    		<Ie1Trans>Один</Ie1Trans>
+		<Ie2>见</Ie2>
+    		<Ie2Trans>Видеть</Ie2Trans>
+		<Ie3>钟</Ie3>
+    		<Ie3Trans>Часы</Ie3Trans>
+		<Ie4>情</Ie4>
+    		<Ie4Trans>Любовь</Ie4Trans>
+	</chinese>
+	<chinese num = "8">
+    		<Chiierog>驷马难追</Chiierog>
+    		<Chitrans>За четырьмя лошадьми трудно гнаться</Chitrans>
+    		<Ie1>驷</Ie1>
+    		<Ie1Trans>Четыре</Ie1Trans>
+		<Ie2>马</Ie2>
+    		<Ie2Trans>Лошадь</Ie2Trans>
+		<Ie3>难</Ie3>
+    		<Ie3Trans>Сложный</Ie3Trans>
+		<Ie4>追</Ie4>
+    		<Ie4Trans>Преследовать</Ie4Trans>
+	</chinese>
+	<chinese num = "9">
+    		<Chiierog>留人过名</Chiierog>
+    		<Chitrans>Человек, проходя, оставляет репутацию</Chitrans>
+    		<Ie1>人</Ie1>
+    		<Ie1Trans>Человек</Ie1Trans>
+		<Ie2>过</Ie2>
+    		<Ie2Trans>Проходить</Ie2Trans>
+		<Ie3>留</Ie3>
+    		<Ie3Trans>Оставаться</Ie3Trans>
+		<Ie4>名</Ie4>
+    		<Ie4Trans>Имя</Ie4Trans>
+	</chinese>
+	<chinese num = "10">
+    		<Chiierog>军千得易</Chiierog>
+    		<Chitrans>Тысячи солдат легко заполучить</Chitrans>
+    		<Ie1>千</Ie1>
+    		<Ie1Trans>Тысячи</Ie1Trans>
+		<Ie2>军</Ie2>
+    		<Ie2Trans>Армия</Ie2Trans>
+		<Ie3>易</Ie3>
+    		<Ie3Trans>Простой</Ie3Trans>
+		<Ie4>得</Ie4>
+    		<Ie4Trans>Получать</Ie4Trans>
+	</chinese>
+   </Rowswc>
+

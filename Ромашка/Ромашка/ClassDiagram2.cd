@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ромашка.About" Collapsed="true">
+    <Position X="1" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAQAohCEACAAQRAABACgQhQKAoAIYACC8AA0AwFAAQA=</HashCode>
+      <FileName>About.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.database">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Interface Name="Ромашка.database.IUser">
+        <TypeIdentifier>
+          <NewMemberFileName>database.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Interface Name="Ромашка.database.IDatabaseHelper">
+        <TypeIdentifier>
+          <NewMemberFileName>database.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Class Name="Ромашка.database.User">
+        <TypeIdentifier>
+          <NewMemberFileName>database.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Ромашка.database.DatabaseHelper">
+        <TypeIdentifier>
+          <NewMemberFileName>database.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Admin" Collapsed="true">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCCAAAIAACAAQBiQIACgAABKIHg4AAACEHAIAAABBQI=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.CheckZap" Collapsed="true">
+    <Position X="1" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACgAAAKAAAIAAAAAEAAAAAAAQA=</HashCode>
+      <FileName>CheckZap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Chemistry" Collapsed="true">
+    <Position X="1" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAQBMhCMgCAAgRgAAAChQAwKAcA5IAAA6HkuAABCIQA=</HashCode>
+      <FileName>Chemistry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Chinese" Collapsed="true">
+    <Position X="1" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9yAAIhIBASAAABAAAACgQABKIEA4AgAAMHAIAABABQA=</HashCode>
+      <FileName>Chinese.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Contacts" Collapsed="true">
+    <Position X="1" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>pAQAohCEACAAARAABBygQBwKAoA6YAADwFA0AwFBAQA=</HashCode>
+      <FileName>Contacts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Culture" Collapsed="true">
+    <Position X="3.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECAAhhAAACAAABAAAACgAAAKAMw7AAAA0HAPAABgQQA=</HashCode>
+      <FileName>Culture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Guitar" Collapsed="true">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIhAAACABARgAAACgQAAKAdC4AAAAQHAsAABBIQA=</HashCode>
+      <FileName>Guitar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Home" Collapsed="true">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAYAopCEAiAAQREABACAQBQKAoQIYACC0EA0AQFBIQA=</HashCode>
+      <FileName>HomePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Liter" Collapsed="true">
+    <Position X="3.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8AABABAAACAgADAQAACgAAAKAAA4AAAAAHAAAABAAQA=</HashCode>
+      <FileName>Liter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Loading" Collapsed="true">
+    <Position X="3.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQYshQAAiAAiRAAACCAQAAKAAIYIAgAQHQgAQBAAQE=</HashCode>
+      <FileName>Loading.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.LogIn" Collapsed="true">
+    <Position X="3.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hCQAIhSEACAAQRAABACgQBQKAMA4YACG0FAsA0FBAQA=</HashCode>
+      <FileName>LogIn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.MiniGames" Collapsed="true">
+    <Position X="5.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAQAohiEACAAQREABAChQAQKAsQ7IACi0DA/CwBBIQA=</HashCode>
+      <FileName>MiniGames.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Nature" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAYAIhAAACAAAVgAAACgQAAKAAA4IAAAYHAgAQBAAQA=</HashCode>
+      <FileName>Nature.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Program" Collapsed="true">
+    <Position X="3.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.Registr" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAhAAAASAAABCAAACgAABKIkA4AAAAEHAIAABAAYA=</HashCode>
+      <FileName>Registr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.seeteach" Collapsed="true">
+    <Position X="5.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAACCgAgAKAgAIAAAAAEAAAAAAAQA=</HashCode>
+      <FileName>seeteach.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ромашка.SignIn" Collapsed="true">
+    <Position X="5.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAwAohQEACAAQREAAACgQBAKAoA4QACCQDA8AQNBYQA=</HashCode>
+      <FileName>SignIn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\SQLite.3.13.0\build\net45\SQLite.props" Condition="Exists('..\packages\SQLite.3.13.0\build\net45\SQLite.props')" />
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7794526B-A7D7-467B-B3E8-EA0118DE44A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ромашка</RootNamespace>
+    <AssemblyName>Ромашка</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Sqlite, Version=8.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Sqlite.Core.8.0.4\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green, Version=1.1.12.351, Culture=neutral, PublicKeyToken=a84b7dcfb1391f7f, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.12\lib\net45\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.1.12.351, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.12\lib\net45\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=2.1.8.2226, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.core.2.1.8\lib\netstandard2.0\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.dynamic_cdecl, Version=2.1.8.2226, Culture=neutral, PublicKeyToken=b68184102cba0b3b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.provider.dynamic_cdecl.2.1.8\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.e_sqlite3, Version=1.1.12.351, Culture=neutral, PublicKeyToken=9c301db686d0bd12, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.provider.e_sqlite3.net45.1.1.12\lib\net45\SQLitePCLRaw.provider.e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.118.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.118.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckZap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckZap.Designer.cs">
+      <DependentUpon>CheckZap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chemistry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chemistry.Designer.cs">
+      <DependentUpon>Chemistry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chinese.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chinese.Designer.cs">
+      <DependentUpon>Chinese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Culture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Culture.Designer.cs">
+      <DependentUpon>Culture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="database.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liter.Designer.cs">
+      <DependentUpon>Liter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nature.Designer.cs">
+      <DependentUpon>Nature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registr.Designer.cs">
+      <DependentUpon>Registr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seeteach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seeteach.Designer.cs">
+      <DependentUpon>seeteach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniGames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniGames.Designer.cs">
+      <DependentUpon>MiniGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contacts.Designer.cs">
+      <DependentUpon>Contacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Guitar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guitar.Designer.cs">
+      <DependentUpon>Guitar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckZap.resx">
+      <DependentUpon>CheckZap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chemistry.resx">
+      <DependentUpon>Chemistry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chinese.resx">
+      <DependentUpon>Chinese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Culture.resx">
+      <DependentUpon>Culture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guitar.resx">
+      <DependentUpon>Guitar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liter.resx">
+      <DependentUpon>Liter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nature.resx">
+      <DependentUpon>Nature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registr.resx">
+      <DependentUpon>Registr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seeteach.resx">
+      <DependentUpon>seeteach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniGames.resx">
+      <DependentUpon>MiniGames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacts.resx">
+      <DependentUpon>Contacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App1.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\lightrot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\lightrot2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\lightrot3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account-valiadtion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face-id-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vr-play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flower_9591128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rain_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ромашка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pin de iasmin en lauren layne standaloness _ Fotografía musical, Colage de fotos, Guitarras pintadas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinese calligraphy writing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\наверное, самая эстетичная фотка, которую я когда-либо делала.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Без названия.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Без названия %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Груши эстетика.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DITOE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IJ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LiveLib.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MDZS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SVSSS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TGCF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TORW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRVH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WoH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Горизонтальный фон с облаками _ Бесплатно векторы.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AM1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BW1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\string.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thistr.wav" />
+    <None Include="Resources\sixstr.wav" />
+    <None Include="Resources\secstr.wav" />
+    <None Include="Resources\forstr.wav" />
+    <None Include="Resources\firstr.wav" />
+    <None Include="Resources\fifstr.wav" />
+    <None Include="Resources\long-glass_7489234.png" />
+    <None Include="Resources\water.wav" />
+    <None Include="Resources\apple_8992763.png" />
+    <None Include="Resources\chamomile_5344236.png" />
+    <None Include="Resources\fruit_12915457.png" />
+    <None Include="Resources\plant_8809609.png" />
+    <None Include="Resources\seeds_5698569.png" />
+    <None Include="Resources\sun_3147666.png" />
+    <None Include="Resources\watering-can_7441622.png" />
+    <None Include="Resources\flour_931694.png" />
+    <None Include="Resources\flower_14826677.png" />
+    <None Include="Resources\nature_12658818.png" />
+    <None Include="Resources\tulip_4750904.png" />
+    <None Include="Resources\tulip_6509318.png" />
+    <None Include="Resources\tulip_10132895.png" />
+    <None Include="Resources\Mianye.jpg" />
+    <None Include="Resources\wedding.jpg" />
+    <None Include="Resources\hanbok.jpg" />
+    <None Include="Resources\dozhinki.jpg" />
+    <None Include="Resources\ramadan.jpg" />
+    <None Include="Resources\namaste.jpg" />
+    <None Include="Resources\sado.jpg" />
+    <None Include="Resources\golub.jpg" />
+    <None Include="Resources\wai.jpg" />
+    <None Include="Resources\pday.jpg" />
+    <None Include="Resources\тк.jpg" />
+    <None Include="Resources\батик.jpg" />
+    <None Include="Resources\гс.jpg" />
+    <None Include="Resources\икинимба.jpg" />
+    <None Include="Resources\катрина.jpg" />
+    <None Include="Resources\напитки.jpg" />
+    <None Include="Resources\дп.jpg" />
+    <None Include="Resources\гибралтар.jpg" />
+    <None Include="Resources\музинстр.jpg" />
+    <None Include="Resources\фанк.jpg" />
+    <None Include="Resources\калинаго.jpg" />
+    <None Include="Resources\гг.jpg" />
+    <None Include="Resources\жест.jpg" />
+    <None Include="Resources\тонга.jpeg" />
+    <None Include="Resources\свиг.jpg" />
+    <None Include="Resources\кцк.jpg" />
+    <None Include="Resources\гб.jpg" />
+    <None Include="Resources\фуфу.jpg" />
+    <None Include="Resources\мик.jpg" />
+    <None Include="Resources\дсп.jpg" />
+    <None Include="Resources\txt.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiktok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flower_9591128.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\SQLite.3.13.0\build\net45\SQLite.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLite.3.13.0\build\net45\SQLite.props'))" />
+    <Error Condition="!Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets'))" />
+    <Error Condition="!Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.osx.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.osx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLitePCLRaw.lib.e_sqlite3.osx.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.osx.targets'))" />
+    <Error Condition="!Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.v110_xp.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLitePCLRaw.lib.e_sqlite3.v110_xp.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets" Condition="Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets')" />
+  <Import Project="..\packages\SQLitePCLRaw.lib.e_sqlite3.osx.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.osx.targets" Condition="Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.osx.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.osx.targets')" />
+  <Import Project="..\packages\SQLitePCLRaw.lib.e_sqlite3.v110_xp.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets" Condition="Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.v110_xp.1.1.12\build\net35\SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+</Project>
